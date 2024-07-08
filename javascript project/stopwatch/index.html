@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gradient-to-t to-purple-700 from-slate-600 h-lvh flex justify-center items-center ">
+    <div class="flex items-center flex-col  border-2 rounded-xl shadow-xl shadow-emerald-600 relative bottom-16">
+        <div class="p-10 text-5xl"> 
+
+            <p id="stopwatch" class="font-bold">00:00:00</p>
+        </div>
+        <div class="flex gap-5 text-4xl pb-6">
+
+            <button onclick="startstop()"><i class="fa-solid fa-stop"></i></button>
+            <button onclick="startw()"><i class="fa-solid fa-play"></i></button>
+            <button onclick="startreset()"><i class="fa-solid fa-reply"></i></button>
+        </div>
+    </div>
+
+</body>
+
+</html>

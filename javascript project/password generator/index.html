@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ">
+    <div class="flex justify-center  items-center h-lvh">
+<div class="shadow-lg shadow-black p-12 rounded-2xl   border-2">
+
+    <div class="flex justify-center items-center gap-4 " >
+        
+        <input type="text" id="passdisplay" class=" rounded-xl outline-none">
+        <i class="fa-regular fa-copy hover:cursor-pointer" id="copy"></i>
+    </div>
+    <div class="mt-1 text-center flex justify-between   ">
+        <label for="bigletter" class="font-serif  text-xl"  > password length   </label>
+        <input type="number" max="15" min="1"  id="plength" class="rounded-xl outline-none w-8">
+    </div>
+    <div class="flex justify-between">
+        
+        <label for="bigletter" class="font-serif  text-xl"  > include capital letter</label>
+        <input type="checkbox" checked name="bigletter" id="bigletter">
+    </div>
+    <div class="flex justify-between">
+        
+        <label for="smallleter" class="font-serif  text-xl" > include small letter
+            
+        </label>
+            <input type="checkbox" name="smallleter" id="small">
+    </div>
+    <div class="flex justify-between">
+        
+        <label for="number" class="font-serif  text-xl" > include number
+            
+        </label>
+            <input type="checkbox" name="number" id="number">
+    </div>
+    <div class="flex justify-between">
+        
+        <label for="symbol" class="font-serif  text-xl" >  include symbol</label>
+        <input type="checkbox" name="symbol" id="symbol">
+    </div>
+    <div class=" text-center ">
+        
+        <button onclick="add()" class="bg-slate-600 pl-3 pr-5 rounded-lg mt-2 text-white shadow shadow-white ">
+            <p class="hover:translate-x-1">
+
+                generate
+            </p>
+        </button>
+    </div>
+</div>
+    
+</div>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="!scroll-smooth  ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mohit portfolio</title>
+    <script src="https://cdn.tailwindcss.com">
+
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: rgb(18, 18, 18)
+        }
+
+        body::-webkit-scrollbar-thumb {
+            border-radius: 3px;
+            background: rgb(225, 218, 218)
+        }
+    </style>
+</head>
+
+<body class="w-full h-full bg-black    ">
+    <nav class=" flex justify-between items-center       h-16 sticky top-0">
+        <div class=" flex items-center gap-5 ">
+            <img src="depositphotos_359807910-stock-illustration-initial-letter-logo-vector-template.jpg"
+                class="h-10 rounded-full" alt="">
+            <p class="font-mono  cursor-default text-cyan-100"> MOHIT</p>
+        </div>
+        <div class="flex  ">
+            <ul class="  hidden gap-12 font-mono text-cyan-100 mr-5 md:flex    ">
+                <li
+                    class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                    <a href="#home"> Home</a>
+                </li>
+                <li
+                    class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                    <a href="#skills"> Skills</a>
+                </li>
+                <li
+                    class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                    <a href="#project"> Project</a>
+                </li>
+                <li
+                    class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                    <a href="#about me"> About</a>
+                </li>
+                <li
+                    class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                    <a href="#contact"> Contact</a>
+                </li>
+            </ul>
+
+
+
+
+            <button class=" font-mono text-cyan-100 mr-5    bg-black  items-end  md:hidden " onclick="handleMenu1()">
+
+
+                <i class="fa-solid fa-bars  " ></i> </a>
+            </button>
+
+            <div class="font-mono text-cyan-100 items-end fixed  hidden    bg-black     " id="nav-dialog" >
+                <button class="md:hidden  items-end size-5" onclick="handleMenu1()" >
+
+                    <i class="fa-solid fa-xmark"></i> </button>
+                <ul 
+                    class="  rounded-3xl  mt-5 flex flex-col items-end gap-2 absolute right-[0.5px] bg-gradient-to-r from-transparent via-black h-56 w-36 md:hidden">
+                    <li
+                        class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                        <a href="#home"> Home</a>
+                    </li>
+                    <li
+                        class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                        <a href="#skills"> Skills</a>
+                    </li>
+                    <li
+                        class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                        <a href="#project"> Project</a>
+                    </li>
+                    <li
+                        class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                        <a href="#about me"> About</a>
+                    </li>
+                    <li
+                        class="  hover:underline underline-offset-[5px] hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                        <a href="#contact"> Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section id="home"
+        class="   w-full    flex  flex-wrap  justify-center  bg-[url('abstract-network-connection-background-molecules-1295549.jpg')]  h-[39.9rem] z-0 ">
+
+        <div class=" flex flex-col gap-5  md:mr-20  md:mt-32   min-[320px]:items-center min-[320px]:mt-[-10px] min-[320px]:mr-[-5px]   ">
+            <div class=" ">
+
+                <h1 class="  font-mono md:text-7xl  text-cyan-50  min-[320px]: text-[40px]  ">Hi there,</h1>
+
+            </div>
+            <div>
+
+                <h1 class=" font-mono  md:text-6xl text-cyan-50 min-[320px]: text-[35px]"> I'm MOHIT DAGAR</h1>
+            </div>
+            <div>
+
+                <h1 class="  font-mono md:text-4xl   text-cyan-50 min-[320px]: text-[22px] ">I'm <span id="text"></span>
+                </h1>
+            </div>
+            <div class="  ">
+                <a href="#about me">
+
+                    <button
+                        class="border-2 rounded-tr-lg rounded-bl-lg text-cyan-50 p-3 pl-10 pr-10 min-[320px]: text-[15px]">About
+                        me</button>
+                </a>
+            </div>
+
+            <div class="min-[320px]: flex text-center  justify-center">
+
+                <i
+                    class="fa-brands fa-linkedin   text-blue-500 bg-black border-2 rounded-full  p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-1.5 duration-500 "></i>
+
+                <a href="https://www.instagram.com/mdagar_3">
+
+                    <i
+                        class="fa-brands fa-instagram  text-red-500 bg-black border-2 rounded-full p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-1.5 duration-500 "></i>
+                </a>
+                <i
+                    class="fa-brands fa-discord  text-blue-700   bg-black border-2 rounded-full p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-1.5 duration-500 "></i>
+               <a href="https://github.com/Mohit84478">
+
+                   <i
+                   class="fa-brands fa-github  text-white   bg-black  border-2 rounded-full p-3 hover:cursor-pointer m-2 hover:scale-110 hover:-translate-y-1.5 duration-500  "></i>
+                </a>
+
+                <a href="https://t.me/mddagar">
+
+                    <i
+                        class="fa-solid fa-paper-plane  text-sky-600 border-2 bg-black rounded-full p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-1.5 duration-500 "></i>
+                </a>
+            </div>
+
+
+
+        </div>
+        <div class=" justify-center min-[320px]: flex   ">
+            <img src="1.png" class="  rounded-full ml-28 lg:h-96  md:mt-20 min-[320px]:h-[13rem] min-[320px]:m-0  ">
+        </div>
+    </section>
+    <section id="skills" class="   h-full w-full md:flex-col">
+        <div class="font-mono text-5xl  flex gap-2  justify-center items-center text-cyan-100">
+            <i class="fa-solid fa-arrow-down"></i>
+            <span class=" text-center "> what I know</span>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div class="p-10 text-cyan-100  flex flex-row justify-center gap-6    ">
+            <div class=" border-2 border-stone-950 rounded-lg   bg-stone-950   ">
+                <div class="  flex flex-col   gap-2 text-cyan-50 items-center "><span>frontend</span>
+                    <div class=" flex justify-evenly flex-wrap  p-5 gap-6 text-center ">
+
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="images.png" class="h-20 object-cover	 rounded-2xl" alt="">
+                            <span>html</span>
+                        </div>
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="images (1).png" class="h-20 object-cover rounded-2xl	" alt="">
+                            <span>css</span>
+                        </div>
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="tailwind-css-icon-2048x1229-u8dzt4uh.png" class="h-20 object-cover rounded-2xl	"
+                                alt="">
+                            <span> tailwind css</span>
+                        </div>
+
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="png-transparent-node-js-brands-icon.png" class="h-20 object-cover	 rounded-2xl"
+                                alt="">
+                            <span>javascript</span>
+                        </div>
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="282599.webp" class="h-20 object-cover	 rounded-2xl" alt="">
+                            <span>react.js</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-stone-950 rounded-lg  bg-stone-950">
+
+                <div class="flex text-cyan-50 flex-col gap-2 items-center "><span>backend</span>
+                    <div class=" flex justify-evenly  flex-wrap  p-5 pr-16 gap-6 text-center justify-items-center ">
+
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="download.png" class="h-20 object-cover	 rounded-2xl" alt="">
+                            <span>node.js</span>
+                        </div>
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="mongodb_thumbnail.webp" class="h-20 object-cover	 rounded-2xl" alt="">
+                            <span>mongodb</span>
+                        </div>
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="download (1).png" class="h-20 object-cover	 rounded-2xl" alt="">
+                            <span> express.js</span>
+                        </div>
+
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="J5Yt92WW_400x400.png" class="h-20 object-cover	 rounded-2xl" alt="">
+                            <span>mysql</span>
+                        </div>
+                        <div class="hover:scale-110 hover:-translate-y-1.5 duration-500 ">
+                            <img src="git.jpg" class="h-20 object-cover	 rounded-2xl" alt="">
+                            <span>git</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <main id="project">
+        <div class="text-cyan-100 flex justify-center text-4xl">project made</div>
+        <div class="flex  flex-wrap border-2  border-stone-950 justify-evenly gap-6 p-5">
+
+            <div
+                class=" flex flex-col border-2 gap-3 rounded-3xl border-stone-950 bg-stone-950 hover:scale-105 hover:-translate-y-1.5 duration-500  ">
+                <img src="discord-clone.webp" class="rounded-3xl h-[12rem] w-[19rem] object-cover" alt="">
+
+                <div class="flex flex-col px-4 py-2 h-24">
+                    <div class="flex font-bold text-cyan-50">Discord Clone UI</div>
+                    <div class="flex text-info  text-cyan-50">html,tailwind css, React</div>
+                </div>
+            </div>
+
+            <div
+                class=" flex flex-col border-2 gap-3  rounded-3xl border-stone-950 bg-stone-950  hover:scale-105 hover:-translate-y-1.5 duration-500  ">
+                <img src="insta.webp" class="rounded-3xl h-[12rem] w-[19rem] object-cover  ">
+
+                <div class="flex flex-col px-4 py-2 h-24">
+                    <div class="flex font-bold text-cyan-50">dictinonary</div>
+                    <div class="flex text-info  text-cyan-50">tailwind css,html,javascript,api</div>
+                </div>
+            </div>
+
+            <div
+                class=" flex flex-col border-2 gap-3   rounded-3xl border-stone-950 bg-stone-950 hover:scale-105 hover:-translate-y-1.5 duration-500 ">
+                <a href="https://mohit-dagar.netlify.app/">
+                    
+                    <img src="Untitled.png" class="rounded-3xl h-[12rem] w-[19rem] object-cover" alt="">
+                </a>
+
+                <div class="flex flex-col px-4 py-2 h-24">
+                    <div class="flex font-bold text-cyan-50">portfolio</div>
+                    <div class="flex text-info  text-cyan-50">tailwind css, javascript,html
+                    </div>
+                </div>
+            </div>
+            <div
+                class=" flex flex-col border-2 gap-3  rounded-3xl border-stone-950 bg-stone-950 hover:scale-105 hover:-translate-y-1.5 duration-500  ">
+
+                <img src="spotify-clone.webp" class="rounded-3xl h-[12rem] w-[19rem] object-cover" alt="">
+
+                <div class="flex flex-col px-4 py-2 h-24">
+                    <div class="flex font-bold text-cyan-50">wheather app  </div>
+                    <div class="flex text-info  text-cyan-50">html,javascript tailwind css
+                        Typescript</div>
+                </div>
+            </div>
+            <div
+                class=" flex flex-col border-2 gap-3  rounded-3xl border-stone-950 bg-stone-950 hover:scale-105 hover:-translate-y-1.5 duration-500  ">
+
+                <a href="C:\Users\mohit bca\Desktop\front end\javascript project\todo list">
+                <img src="download.jpg" class="rounded-3xl h-[12rem] w-[19rem] object-cover" alt="">
+            </a>
+
+                <div class="flex flex-col px-4 py-2 h-24">
+                    <div class="flex font-bold text-cyan-50"> todo list</div>
+                    <div class="flex text-info  text-cyan-50">tailwind css, javascript,html</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <section id="about me">
+        <div class="flex justify-center gap-5  text-cyan-50 text-3xl">about <div> me</div>
+        </div>
+        <div class="flex  flex-wrap justify-center   gap-16   ">
+            <div class="  mt-6 border-2 rounded-3xl">
+                <img src="1.png" loading="lazy" class=" h-[20rem] rounded-3xl " alt="">
+            </div>
+            <div class="  mt-6  bg-stone-950  rounded-3xl flex flex-col gap-2 pl-10  font-mono">
+                <div class="text-cyan-50 font-medium text-xl  mt-2 "> i am MOHIT</div>
+                <div class="text-cyan-50 font-semibold"> frontend developer </div>
+                <div class="text-cyan-50 font-mono">
+                    I am a full-stack developer based in Delhi, India. I am a Bachelor of Computer Application
+                    undergraduate. <br> I am very passionate about improving my coding skills and developing
+                    applications and
+                    websites. <br> I build   websites using MERN Stack. I work for myself to improve my skills. I love
+                    to build
+                    full-stack clones.
+                </div>
+                <div class=" flex text-cyan-50">
+                    <h1> name :</h1>&nbsp; MOHIT DAGAR
+                </div>
+                <div class=" flex text-cyan-50">
+                    <h1> gmail:</h1> &nbsp; &nbsp; <a href="">mohitdagar2525@gmail.com</a>
+                </div>
+                <div class=" flex text-cyan-50">
+                    <h1> address :</h1> &nbsp; Delhi-110073
+                </div>
+                <div class=" flex text-cyan-50">
+                    <h1> phone no :</h1> &nbsp; +91 8447821857
+                </div>
+                <div class="flex justify-center ">
+                    <button
+                        class="bg-fuchsia-50 pl-5 pr-5 rounded-md hover:scale-105 hover:-translate-y-1.5 duration-500 ">
+                        resume
+
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+
+        <div class="flex justify-center gap-4 m-10 text-cyan-50 text-4xl"> <i class="fas fa-headset"></i>contact </div>
+
+        <div class="  flex   justify-evenly flex-wrap    ">
+            <div class="  flex ">
+                <img src="Untitled.png" loading="lazy" class="rounded-3xl h-[28rem] shadow-md shadow-white " alt="">
+            </div>
+            <div class="     ">
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col   mt-5   gap-5  ">
+                    <div class=" flex gap-2 bg-white   rounded-xl md:w-full min-[320px]:w-[20rem] ">
+                        <input type="hidden" name="access_key" value="6e7a72ce-4440-41d9-a875-2b4928924378">
+                        <i class="fa-solid fa-user  text-2xl"></i>
+                        <input type="text" name=" name" required placeholder="name  " id=""
+                            class="  rounded-xl w-[28rem]  h-8     ">
+                    </div>
+                    <div class=" flex gap-2 bg-white rounded-xl md:w-full min-[320px]:w-[20rem]">
+                        <i class="fa-solid fa-envelope text-2xl"></i>
+                        <input type="text" name="email" required placeholder="email"
+                            class=" h-7 w-[28rem] rounded-xl  ">
+                    </div>
+                    <div class=" flex gap-2 bg-white rounded-xl md:w-full min-[320px]:w-[20rem]">
+                        <i class="fa-solid fa-phone  text-2xl"></i>
+                        <input type="number" name="number" required placeholder="number"
+                            class=" h-7 w-[28rem] rounded-xl ">
+                    </div>
+                    <div class=" flex gap-2 bg-white rounded-xl md:w-full min-[320px]:w-[20rem]">
+                        <i class="fa-solid fa-comment-dots   text-2xl"></i>
+                        <textarea name="message" required id="" placeholder="message" cols="40"
+                            class="w-[28rem]  rounded-xl" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="   cursor-default  flex justify-end ">
+                        <span class="  cursor-pointer w-44 bg-white rounded-xl">
+
+                            submit
+                            <i class="fa fa-paper-plane"></i>
+                        </span>
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <div class="bg-stone-950 text-cyan-50 mt-5  flex justify-evenly flex-wrap gap-6  font-mono">
+            <div class="flex flex-col gap-5 mt-5">
+                <h1>Mohit's portfolio</h1>
+                <span>Thank you for visiting my personal portfolio website. <br>Connect with me over socials.</span>
+                <p>
+                    Keep Rising 🚀. </p>
+            </div>
+            <div class="flex flex-col gap-5 mt-5  items-start min-[320px]:relative min-[320px]:right-[108px] font-mono">
+                <h1>quick links</h1>
+                <ul class="flex flex-col gap-2   ">
+
+                    <li class="hover:scale-105 hover:-translate-y-1.5 duration-500 "><i
+                            class="fa-solid fa-greater-than"></i> <a href="#home"> Home</a> </li>
+                    <li class="hover:scale-105 hover:-translate-y-1.5 duration-500 "><i
+                            class="fa-solid fa-greater-than"></i>
+                        <a href="#skills"> Skills</a>
+                    </li>
+                    <li class="hover:scale-105 hover:-translate-y-1.5 duration-500 "><i
+                            class="fa-solid fa-greater-than"></i>
+                        <a href="#project"> Project</a>
+                    </li>
+                    <li class="hover:scale-105 hover:-translate-y-1.5 duration-500 "><i
+                            class="fa-solid fa-greater-than"></i>
+                        <a href="#about me"> About</a>
+                    </li>
+                    <li class="hover:scale-105 hover:-translate-y-1.5 duration-500 "><i
+                            class="fa-solid fa-greater-than"></i>
+                        <a href="#contact"> Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-5 mt-5 font-mono">
+                <h1>contact us</h1>
+                <span>
+                    <i class="fa-solid fa-phone  text-2xl"></i>
+                    +91 8447821857
+                </span>
+                <span>
+                    <i class="fa-solid fa-envelope text-2xl"></i>
+                    mohitdagar2525@gmail.com
+                </span>
+                <span>
+                    <i class="fa-solid fa-map-location"></i>
+                    delhi,India-110073
+
+                </span>
+                <div>
+
+                    <i
+                        class="fa-brands fa-linkedin text-blue-500   border-2 rounded-full p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-3 duration-500"></i>
+                    <i
+                        class="fa-brands fa-instagram  text-red-500 border-2 rounded-full p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-3 duration-500"></i>
+                    <i
+                        class="fa-brands fa-discord  text-blue-600   border-2 rounded-full p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-3 duration-500"></i>
+                    <i
+                        class="fa-brands fa-github  text-white     border-2 rounded-full p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-3 duration-500"></i>
+                    <i
+                        class="fa-solid fa-paper-plane  text-sky-700 border-2 rounded-full p-3 hover:cursor-pointer m-2  hover:scale-110 hover:-translate-y-3 duration-500"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="m-5 text-cyan-50 flex justify-center"> &#128170; Designed with &#10084; By Mohit Dagar </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#text', {
+            strings: ['frontend developer','backend developer'],
+            typeSpeed: 100,
+            loop: true
+        });
+
+
+    </script>
+    <script>
+        const navdialog = document.getElementById('nav-dialog');
+        function handleMenu1() {
+            navdialog.classList.toggle('hidden');
+
+        }
+    </script>
+
+</body>
+
+</html>

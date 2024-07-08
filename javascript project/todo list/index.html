@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="todolist.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body  class="bg-gradient-to-t to-slate-600 from-black h-[43.95rem]">
+    <section class="flex justify-center ">
+
+        <div  class="flex flex-col items-center  mt-11 w-80 h-32 bg-blue-400  rounded-xl ">
+            <h1 class="font-serif text-3xl">todo list</h1>
+            <div class="flex  ">
+                <input type="text" id="inputf" class="border-2 ">
+                <button onclick="add()" class="hover:bg-slate-100 p-1 rounded-xl">Add</button>
+            </div>
+            <div class="flex flex-col  justify-end  mt-5 w-80 h-fit bg-blue-400  rounded-xl">
+                
+                <ul id="list" class="font-serif">
+                    
+                    
+                </ul>
+            </div>
+        </div>
+            
+    </section>
+
+</body>
+</html>
